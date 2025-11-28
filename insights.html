@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Insights - TradeHut Africa</title>
+    <meta name="description" content="Access comprehensive financial insights, market analysis, trading education, and investment strategies from TradeHut Africa's expert team.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-chart-line me-2"></i>TradeHut Africa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gfci.html">GFCI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="insights.html">Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ms-2 px-3" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="ticker-tape" aria-label="Market ticker">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+              "symbols": [
+                { "proName": "FX_IDC:EURUSD", "title": "EUR/USD" },
+                { "proName": "FX_IDC:GBPUSD", "title": "GBP/USD" },
+                { "proName": "OANDA:USDZAR", "title": "USD/ZAR" },
+                { "proName": "COMEX:GC1!", "title": "Gold" },
+                { "proName": "NYMEX:CL1!", "title": "Crude Oil" },
+                { "proName": "BINANCE:BTCUSDT", "title": "BTC/USDT" }
+              ],
+              "showSymbolLogo": true,
+              "colorTheme": "dark",
+              "isTransparent": true,
+              "displayMode": "regular",
+              "locale": "en"
+            }
+            </script>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h1 class="display-4 fw-bold mb-4 font-display">Financial Insights & Education</h1>
+                    <p class="lead mb-5">Stay informed with expert market analysis, trading strategies, investment insights, and financial education tailored for African markets and global opportunities.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#market-analysis" class="btn btn-light btn-lg px-4">
+                            <i class="fas fa-chart-line me-2"></i>Market Analysis
+                        </a>
+                        <a href="#trading-education" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-graduation-cap me-2"></i>Trading Education
+                        </a>
+                        <a href="#investment-strategies" class="btn btn-secondary btn-lg px-4">
+                            <i class="fas fa-lightbulb me-2"></i>Investment Strategies
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4 font-display text-primary">Featured Insights</h2>
+                    <p class="lead text-muted">Our latest analysis and educational content to help you navigate African and global financial markets.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="featured-article card border-0 shadow-lg h-100">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20financial%20trading%20floor%20in%20Africa%2C%20multiple%20screens%20showing%20charts%20and%20market%20data%2C%20diverse%20traders%20in%20professional%20attire%2C%20modern%20office%20environment%2C%20blue%20and%20white%20color%20scheme%2C%20high-tech%20financial%20environment&image_size=landscape_16_9" 
+                                     alt="African Financial Markets" class="img-fluid rounded-start h-100 object-fit-cover">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body p-4 d-flex flex-column h-100">
+                                    <div class="article-meta mb-3">
+                                        <span class="badge bg-primary me-2">Market Analysis</span>
+                                        <small class="text-muted">
+                                            <i class="far fa-calendar me-1"></i>Nov 28, 2024
+                                            <i class="far fa-clock ms-2 me-1"></i>8 min read
+                                        </small>
+                                    </div>
+                                    <h3 class="card-title fw-bold mb-3 font-display">The Rise of African Financial Markets: Opportunities and Challenges</h3>
+                                    <p class="card-text text-muted mb-4 flex-grow-1">Explore the rapid growth of African financial markets, key investment opportunities across the continent, and strategies for navigating emerging market dynamics in 2024.</p>
+                                    <div class="article-footer d-flex justify-content-between align-items-center">
+                                        <div class="author-info">
+                                            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20African%20businesswoman%20headshot%2C%20confident%20expression%2C%20professional%20attire%2C%20modern%20corporate%20setting%2C%20high-quality%20portrait%2C%20business%20professional&image_size=square" 
+                                                 alt="Author" class="author-avatar rounded-circle me-2" width="32" height="32">
+                                            <small class="text-muted">By Sarah Mwangi</small>
+                                        </div>
+                                        <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="article-meta mb-2">
+                                        <span class="badge bg-secondary me-2">Trading Strategy</span>
+                                        <small class="text-muted">Nov 27, 2024</small>
+                                    </div>
+                                    <h5 class="card-title fw-bold mb-2">Forex Trading Strategies for African Markets</h5>
+                                    <p class="card-text text-muted small mb-3">Learn proven forex trading techniques specifically tailored for African currency pairs and market conditions.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="article-meta mb-2">
+                                        <span class="badge bg-success me-2">Real Estate</span>
+                                        <small class="text-muted">Nov 26, 2024</small>
+                                    </div>
+                                    <h5 class="card-title fw-bold mb-2">Real Estate Investment Hotspots in Africa</h5>
+                                    <p class="card-text text-muted small mb-3">Discover the most promising real estate investment opportunities across African markets in 2024.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-sm">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Analysis Section -->
+    <section id="market-analysis" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4 font-display text-primary">Market Analysis</h2>
+                    <p class="lead text-muted">Expert analysis of African and global financial markets, economic trends, and investment opportunities.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="article-card card border-0 shadow-sm h-100">
+                        <div class="card-header bg-transparent border-0 pb-0">
+                            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Stock%20market%20trading%20floor%20in%20Africa%2C%20busy%20traders%20with%20multiple%20screens%2C%20financial%20charts%20and%20data%20visualization%2C%20professional%20trading%20environment%2C%20modern%20office%20setting&image_size=landscape_16_9" 
+                                 alt="Stock Market" class="card-img-top rounded-3">
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="article-meta mb-2">
+                                <span class="badge bg-primary me-2">Stock Markets</span>
+                                <small class="text-muted">Nov 25, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">African Stock Markets Performance Review</h5>
+                            <p class="card-text text-muted mb-3">Comprehensive analysis of major African stock exchanges including Nigeria, Kenya, South Africa, and Egypt.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="far fa-user me-1"></i>John Adebayo
+                                    <i class="far fa-clock ms-2 me-1"></i>12 min read
+                                </small>
+                                <a href="#" class="btn btn-primary btn-sm">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="article-card card border-0 shadow-sm h-100">
+                        <div class="card-header bg-transparent border-0 pb-0">
+                            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Foreign%20exchange%20currency%20trading%20screens%2C%20multiple%20currency%20pairs%2C%20forex%20charts%2C%20professional%20trading%20setup%2C%20blue%20and%20green%20color%20scheme%2C%20financial%20technology%20environment&image_size=landscape_16_9" 
+                                 alt="Forex Trading" class="card-img-top rounded-3">
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="article-meta mb-2">
+                                <span class="badge bg-secondary me-2">Forex</span>
+                                <small class="text-muted">Nov 24, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Currency Volatility in Emerging Markets</h5>
+                            <p class="card-text text-muted mb-3">Understanding currency fluctuations in African markets and strategies for forex trading success.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="far fa-user me-1"></i>Mary Kamau
+                                    <i class="far fa-clock ms-2 me-1"></i>10 min read
+                                </small>
+                                <a href="#" class="btn btn-primary btn-sm">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="article-card card border-0 shadow-sm h-100">
+                        <div class="card-header bg-transparent border-0 pb-0">
+                            <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Commodity%20trading%20screens%20showing%20gold%2C%20oil%2C%20and%20agricultural%20products%2C%20professional%20trading%20environment%2C%20financial%20charts%2C%20modern%20office%20setting%2C%20market%20data%20visualization&image_size=landscape_16_9" 
+                                 alt="Commodities" class="card-img-top rounded-3">
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="article-meta mb-2">
+                                <span class="badge bg-warning text-dark me-2">Commodities</span>
+                                <small class="text-muted">Nov 23, 2024</small>
+                            </div>
+                            <h5 class="card-title fw-bold mb-3">Gold and Oil: Africa's Commodity Giants</h5>
+                            <p class="card-text text-muted mb-3">Analysis of Africa's role in global commodity markets and investment opportunities in natural resources.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">
+                                    <i class="far fa-user me-1"></i>David Mthembu
+                                    <i class="far fa-clock ms-2 me-1"></i>15 min read
+                                </small>
+                                <a href="#" class="btn btn-primary btn-sm">Read</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Education Section -->
+    <section id="trading-education" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4 font-display text-primary">Trading Education</h2>
+                    <p class="lead text-muted">Comprehensive guides and tutorials to help you master trading strategies, technical analysis, and risk management.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-card card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="education-icon mb-3">
+                                <i class="fas fa-chart-line text-primary fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Technical Analysis Masterclass</h4>
+                            <p class="text-muted mb-4">Learn to read charts, identify trends, and use technical indicators to make informed trading decisions in African and global markets.</p>
+                            <div class="education-topics mb-4">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="topic-item p-2 bg-light rounded-3">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            <small>Candlestick Patterns</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="topic-item p-2 bg-light rounded-3">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            <small>Support & Resistance</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="topic-item p-2 bg-light rounded-3">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            <small>Moving Averages</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="topic-item p-2 bg-light rounded-3">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            <small>RSI & MACD</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-primary">Start Learning</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="education-card card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="education-icon mb-3">
+                                <i class="fas fa-shield-alt text-secondary fa-2x"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Risk Management Essentials</h4>
+                            <p class="text-muted mb-4">Master the art of protecting your capital with proven risk management strategies and position sizing techniques for sustainable trading.</p>
+                            <div class="education-topics mb-4">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="topic-item p-2 bg-light rounded-3">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            <small>Position Sizing</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="topic-item p-2 bg-light rounded-3">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            <small>Stop Loss Orders</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="topic-item p-2 bg-light rounded-3">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            <small>Risk-Reward Ratio</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="topic-item p-2 bg-light rounded-3">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            <small>Portfolio Diversification</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Start Learning</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 mt-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tutorial-card card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="tutorial-icon mb-3">
+                                <i class="fas fa-brain text-primary fa-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Trading Psychology</h5>
+                            <p class="text-muted small mb-3">Master the mental aspects of trading and develop emotional discipline for consistent success.</p>
+                            <div class="tutorial-stats mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-video me-1"></i>8 Videos
+                                    <i class="fas fa-clock ms-2 me-1"></i>2.5 Hours
+                                </small>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tutorial-card card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="tutorial-icon mb-3">
+                                <i class="fas fa-newspaper text-secondary fa-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Fundamental Analysis</h5>
+                            <p class="text-muted small mb-3">Learn to analyze economic indicators, company financials, and market news for informed decisions.</p>
+                            <div class="tutorial-stats mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-video me-1"></i>12 Videos
+                                    <i class="fas fa-clock ms-2 me-1"></i>4 Hours
+                                </small>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tutorial-card card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 text-center">
+                            <div class="tutorial-icon mb-3">
+                                <i class="fas fa-robot text-primary fa-2x"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Algorithmic Trading</h5>
+                            <p class="text-muted small mb-3">Introduction to automated trading systems, expert advisors, and algorithmic strategies.</p>
+                            <div class="tutorial-stats mb-3">
+                                <small class="text-muted">
+                                    <i class="fas fa-video me-1"></i>15 Videos
+                                    <i class="fas fa-clock ms-2 me-1"></i>5 Hours
+                                </small>
+                            </div>
+                            <a href="#" class="btn btn-outline-primary btn-sm">View Tutorial</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Strategies Section -->
+    <section id="investment-strategies" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4 font-display text-primary">Investment Strategies</h2>
+                    <p class="lead text-muted">Long-term investment approaches, portfolio management techniques, and wealth building strategies for African investors.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <div class="strategy-card card border-0 shadow-lg mb-4">
+                        <div class="card-body p-5">
+                            <div class="strategy-header mb-4">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <div class="strategy-icon bg-primary text-white rounded-3 p-3">
+                                            <i class="fas fa-chart-pie fa-2x"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <h4 class="fw-bold mb-1">Diversified Portfolio Strategy</h4>
+                                        <p class="text-muted mb-0">Building resilient investment portfolios across African and global markets</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="strategy-content">
+                                <p class="text-muted mb-4">Learn how to construct a well-diversified investment portfolio that balances growth potential with risk management. This comprehensive guide covers asset allocation, geographic diversification, and sector rotation strategies specifically tailored for African investors.</p>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <div class="strategy-point p-3 bg-light rounded-3">
+                                            <h6 class="fw-bold text-primary mb-2">Asset Allocation</h6>
+                                            <p class="small text-muted mb-0">Stocks, bonds, real estate, and alternative investments</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="strategy-point p-3 bg-light rounded-3">
+                                            <h6 class="fw-bold text-primary mb-2">Geographic Diversification</h6>
+                                            <p class="small text-muted mb-0">African, emerging, and developed market exposure</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="strategy-point p-3 bg-light rounded-3">
+                                            <h6 class="fw-bold text-primary mb-2">Sector Rotation</h6>
+                                            <p class="small text-muted mb-0">Cyclical and defensive sector strategies</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="strategy-point p-3 bg-light rounded-3">
+                                            <h6 class="fw-bold text-primary mb-2">Risk Management</h6>
+                                            <p class="small text-muted mb-0">Hedging strategies and downside protection</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="strategy-performance mb-4">
+                                    <div class="row g-3">
+                                        <div class="col-4">
+                                            <div class="text-center p-3 bg-success bg-opacity-10 rounded-3">
+                                                <h5 class="fw-bold text-success mb-1">12.5%</h5>
+                                                <small class="text-muted">Annual Return</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="text-center p-3 bg-info bg-opacity-10 rounded-3">
+                                                <h5 class="fw-bold text-info mb-1">8.2%</h5>
+                                                <small class="text-muted">Volatility</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="text-center p-3 bg-warning bg-opacity-10 rounded-3">
+                                                <h5 class="fw-bold text-warning mb-1">1.52</h5>
+                                                <small class="text-muted">Sharpe Ratio</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary">Read Full Strategy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="strategy-sidebar">
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-header bg-primary text-white">
+                                <h5 class="fw-bold mb-0">
+                                    <i class="fas fa-trending-up me-2"></i>Popular Strategies
+                                </h5>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="list-group list-group-flush">
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fw-bold mb-1">Value Investing</h6>
+                                            <small class="text-muted">Long-term growth approach</small>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-primary"></i>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fw-bold mb-1">Growth Investing</h6>
+                                            <small class="text-muted">High-growth potential stocks</small>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-primary"></i>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fw-bold mb-1">Income Investing</h6>
+                                            <small class="text-muted">Dividend-focused strategy</small>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-primary"></i>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="fw-bold mb-1">Index Investing</h6>
+                                            <small class="text-muted">Passive market exposure</small>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-primary"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card border-0 shadow-sm mb-4">
+                            <div class="card-header bg-secondary text-white">
+                                <h5 class="fw-bold mb-0">
+                                    <i class="fas fa-calculator me-2"></i>Investment Calculator
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold">Initial Investment</label>
+                                    <input type="number" class="form-control" placeholder="$10,000" value="10000">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold">Expected Return (%)</label>
+                                    <input type="number" class="form-control" placeholder="12%" value="12">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold">Time Period (Years)</label>
+                                    <input type="number" class="form-control" placeholder="10" value="10">
+                                </div>
+                                <button class="btn btn-secondary w-100">Calculate Returns</button>
+                                <div class="mt-3 p-3 bg-light rounded-3">
+                                    <div class="d-flex justify-content-between">
+                                        <small class="text-muted">Future Value:</small>
+                                        <small class="fw-bold text-primary">$31,058</small>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <small class="text-muted">Total Returns:</small>
+                                        <small class="fw-bold text-success">$21,058</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="newsletter-card card border-0 shadow-lg">
+                        <div class="card-body p-5 text-center">
+                            <div class="newsletter-icon mb-4">
+                                <i class="fas fa-envelope-open-text text-primary fa-3x"></i>
+                            </div>
+                            <h3 class="fw-bold mb-3 font-display">Stay Updated with Market Insights</h3>
+                            <p class="text-muted mb-4">Subscribe to our newsletter and receive the latest market analysis, trading strategies, and investment insights directly in your inbox.</p>
+                            <form class="newsletter-form mb-4">
+                                <div class="row g-3">
+                                    <div class="col-md-5">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input type="email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <button type="submit" class="btn btn-primary w-100">
+                                            <i class="fas fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="newsletter-benefits">
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <div class="benefit-item">
+                                            <i class="fas fa-chart-line text-primary mb-2"></i>
+                                            <h6 class="fw-bold">Market Analysis</h6>
+                                            <small class="text-muted">Weekly market insights</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="benefit-item">
+                                            <i class="fas fa-lightbulb text-primary mb-2"></i>
+                                            <h6 class="fw-bold">Trading Tips</h6>
+                                            <small class="text-muted">Proven strategies</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="benefit-item">
+                                            <i class="fas fa-graduation-cap text-primary mb-2"></i>
+                                            <h6 class="fw-bold">Education</h6>
+                                            <small class="text-muted">Free learning resources</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
+                    <h2 class="display-5 fw-bold mb-4 font-display text-primary">Connect With Our Experts</h2>
+                    <p class="lead text-muted">Have questions about our insights or need personalized financial guidance? Our team of experts is here to help.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card text-center p-4 bg-light rounded-3 shadow-sm h-100">
+                        <i class="fas fa-comments text-primary fa-2x mb-3"></i>
+                        <h5 class="fw-bold mb-2">Ask Questions</h5>
+                        <p class="text-muted mb-3">Submit your financial questions and get expert answers from our team.</p>
+                        <a href="mailto:insights@tradehutafrica.com" class="btn btn-outline-primary">Ask Expert</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card text-center p-4 bg-light rounded-3 shadow-sm h-100">
+                        <i class="fas fa-user-tie text-secondary fa-2x mb-3"></i>
+                        <h5 class="fw-bold mb-2">Consultation</h5>
+                        <p class="text-muted mb-3">Schedule a one-on-one consultation with our financial advisors.</p>
+                        <a href="mailto:consultation@tradehutafrica.com" class="btn btn-secondary">Book Session</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card text-center p-4 bg-light rounded-3 shadow-sm h-100">
+                        <i class="fas fa-share-alt text-primary fa-2x mb-3"></i>
+                        <h5 class="fw-bold mb-2">Share Insights</h5>
+                        <p class="text-muted mb-3">Contribute your own market insights and analysis to our community.</p>
+                        <a href="mailto:contributions@tradehutafrica.com" class="btn btn-outline-primary">Submit Article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-chart-line me-2"></i>TradeHut Africa
+                    </h5>
+                    <p class="text-light">Empowering African traders and investors with expert insights, market analysis, and comprehensive financial education to build lasting wealth.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Insights</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#market-analysis" class="text-light text-decoration-none">Market Analysis</a></li>
+                        <li><a href="#trading-education" class="text-light text-decoration-none">Trading Education</a></li>
+                        <li><a href="#investment-strategies" class="text-light text-decoration-none">Investment Strategies</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Weekly Reports</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Education</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Beginner Guides</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Advanced Strategies</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Video Tutorials</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Webinars</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Markets</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Stock Markets</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Forex</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Commodities</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Real Estate</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Support</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#contact" class="text-light text-decoration-none">Ask Expert</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Glossary</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 text-light">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2024 TradeHut Africa. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-light mb-0">
+                        <i class="fas fa-shield-alt me-1"></i>
+                        Regulated by ASIC & FCA | 
+                        <i class="fas fa-lock me-1"></i>
+                        Secure & Encrypted
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeHut Africa - Empowering Africa with Verified Financial Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo2.png" alt="TradeHut Africa Logo" class="logo-icon">
+                <h1>TradeHut<span> Africa</span></h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#gfci" class="nav-link">GFCI</a></li>
+                    <li><a href="#insights" class="nav-link">Insights</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </div>
+    </nav>
+    <div class="ticker-tape" aria-label="Market ticker">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+              "symbols": [
+                { "proName": "FX_IDC:EURUSD", "title": "EUR/USD" },
+                { "proName": "FX_IDC:GBPUSD", "title": "GBP/USD" },
+                { "proName": "OANDA:USDZAR", "title": "USD/ZAR" },
+                { "proName": "COMEX:GC1!", "title": "Gold" },
+                { "proName": "NYMEX:CL1!", "title": "Crude Oil" },
+                { "proName": "BINANCE:BTCUSDT", "title": "BTC/USDT" }
+              ],
+              "showSymbolLogo": true,
+              "colorTheme": "dark",
+              "isTransparent": true,
+              "displayMode": "regular",
+              "locale": "en"
+            }
+            </script>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-badge">
+                <i class="fas fa-shield-alt"></i>
+                <span>Licensed & Transparent</span>
+            </div>
+            <h1>Empowering Africa With Verified, Transparent Wealth-Building</h1>
+            <p class="hero-subtitle">Tradehut helps individuals make informed financial decisions through regulated trading, real estate investing, and skill-based income systems, backed by global expertise and absolute transparency.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary-btn">
+                    <span>Get Started</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#gfci" class="btn secondary-btn">
+                    <span>Explore GFCI</span>
+                    <i class="fas fa-globe-africa"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Active Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30%+</span>
+                    <span class="stat-label">Monthly ROI</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">African Countries</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card" data-aos="fade-left" data-aos-delay="200">
+                <div class="card-header">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Live Trading</span>
+                </div>
+                <div class="card-content">
+                    <div class="profit-indicator">
+                        <span class="profit-amount">+$2,847</span>
+                        <span class="profit-percent">+34.2%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-pattern"></div>
+    </section>
+
+    <!-- Trusted Finance Section -->
+    <section class="trusted-finance">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Trusted Finance for a New Africa</h2>
+                <p>Tradehut is a global financial firm operating across Africa and Europe, committed to elevating your finances through legitimate, responsible, and transparent investment strategies.</p>
+            </div>
+            <div class="trust-indicators">
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trust-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Licensed & Transparent</h3>
+                    <p>All our services operate through verified, regulated frameworks. No hidden fees. No unrealistic promises.</p>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Expertise, Local Execution</h3>
+                    <p>Operations across Africa and Europe give clients access to global insights with regional understanding.</p>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="trust-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education First, Profit Second</h3>
+                    <p>We teach you how to understand your money before you invest it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GFCI Section -->
+    <section class="gfci-section" id="gfci">
+        <div class="container">
+            <div class="gfci-content">
+                <div class="gfci-text" data-aos="fade-right">
+                    <div class="gfci-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Global Initiative</span>
+                    </div>
+                    <h2>Introducing GFCI — Global Financial Clarity Initiative</h2>
+                    <p>A Tradehut-led global awareness and education campaign designed to combat investment scams, equip individuals with practical financial skills, and guide people into legitimate financial pathways.</p>
+                    <div class="gfci-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Combat investment scams</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Provide fraud-prevention insights</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Guide to legitimate pathways</span>
+                        </div>
+                    </div>
+                    <a href="gfci.html" class="btn primary-btn">
+                        <span>Learn More About GFCI</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="gfci-visual" data-aos="fade-left">
+                    <div class="gfci-card">
+                        <div class="card-icon">
+                            <i class="fas fa-globe-africa"></i>
+                        </div>
+                        <h3>GFCI Impact</h3>
+                        <div class="impact-stats">
+                            <div class="impact-stat">
+                                <span class="number">20+</span>
+                                <span class="label">Cities Reached</span>
+                            </div>
+                            <div class="impact-stat">
+                                <span class="number">1000+</span>
+                                <span class="label">People Educated</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose TradeHut -->
+    <section class="why-choose" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Why Thousands Trust Tradehut</h2>
+                <p>Your financial security is our top priority</p>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="reason-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure, Data-Driven Platforms</h3>
+                    <p>Your information and investments are protected with industry-standard security protocols.</p>
+                </div>
+                <div class="reason-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="reason-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Real People. Real Guidance. Real Results.</h3>
+                    <p>Our advisors guide you through every step — from your first trade to long-term investment planning.</p>
+                </div>
+                <div class="reason-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="reason-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Proven Track Record</h3>
+                    <p>Consistent results speak louder than promises. Join thousands who've transformed their financial future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Services</h2>
+                <p>Comprehensive financial solutions tailored for African markets</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Regulated Trading Solutions</h3>
+                    <p>Learn how to trade responsibly with transparent systems, expert support, and risk managed strategies.</p>
+                    <a href="#contact" class="service-link">
+                        <span>Start Trading Smart</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Real Estate Investment Opportunities</h3>
+                    <p>Access verified property deals and long-term real estate wealth plans designed for African and European markets.</p>
+                    <a href="#contact" class="service-link">
+                        <span>Explore Real Estate Plans</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Financial Education & Community Support</h3>
+                    <p>Join workshops, webinars, and GFCI-focused training designed to protect and empower you.</p>
+                    <a href="#contact" class="service-link">
+                        <span>Attend a Session</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="values-content">
+                <div class="values-text" data-aos="fade-right">
+                    <h2>What We Stand For</h2>
+                    <p>Our core values drive every decision and interaction</p>
+                    <div class="values-list">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Transparency</h3>
+                                <p>You deserve clarity, not confusion.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Integrity</h3>
+                                <p>We guide you away from shortcuts and into sustainable strategies.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Protection</h3>
+                                <p>We help you avoid scams, frauds, and unregulated schemes.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Growth</h3>
+                                <p>Your success is our mission, and your financial elevation is our purpose.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="values-visual" data-aos="fade-left">
+                    <div class="values-card">
+                        <img src="girl.PNG" alt="TradeHut Values" class="values-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights/Blog Section -->
+    <section class="insights" id="insights">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>From Tradehut Insights</h2>
+                <p>Stay informed with our latest financial education content</p>
+            </div>
+            <div class="insights-grid">
+                <article class="insight-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="insight-image">
+                        <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20African%20businesswoman%20analyzing%20financial%20charts%20on%20computer%2C%20modern%20office%20setting%2C%20serious%20focused%20expression%2C%20clean%20professional%20lighting&image_size=landscape_16_9" alt="Investment Scams">
+                        <div class="insight-category">Security</div>
+                    </div>
+                    <div class="insight-content">
+                        <h3>How to Identify Online Investment Scams in 2025</h3>
+                        <p>Protect your wealth by learning to spot red flags in digital investment opportunities.</p>
+                        <div class="insight-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 28, 2025</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="insight-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="insight-image">
+                        <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20African%20real%20estate%20development%2C%20luxury%20apartments%2C%20professional%20architecture%2C%20golden%20hour%20lighting%2C%20high-end%20residential%20complex&image_size=landscape_16_9" alt="Real Estate">
+                        <div class="insight-category">Investment</div>
+                    </div>
+                    <div class="insight-content">
+                        <h3>Real Estate Opportunities for Young Africans</h3>
+                        <p>Discover accessible property investment strategies for the next generation of African investors.</p>
+                        <div class="insight-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 25, 2025</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="insight-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="insight-image">
+                        <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20trader%20analyzing%20multiple%20screens%2C%20focused%20concentration%2C%20modern%20trading%20desk%2C%20professional%20lighting%2C%20determined%20expression&image_size=landscape_16_9" alt="Trading Psychology">
+                        <div class="insight-category">Trading</div>
+                    </div>
+                    <div class="insight-content">
+                        <h3>Trading Psychology: How to Stay Disciplined</h3>
+                        <p>Master the mental game of trading with proven psychological strategies for success.</p>
+                        <div class="insight-meta">
+                            <span><i class="fas fa-calendar"></i> Nov 22, 2025</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="insights-cta" data-aos="fade-up">
+                <a href="insights.html" class="btn secondary-btn">
+                    <span>Read the Blog</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Join the Tradehut Africa Community</h2>
+                <p>Clarity begins with a conversation. Start your journey to financial empowerment today.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary-btn">
+                        <span>Contact Us</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://t.me/tradehut01" class="btn secondary-btn">
+                        <span>Chat With Support</span>
+                        <i class="fas fa-comments"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <p>We're here to help you achieve your financial goals</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telegram</h3>
+                            <a href="https://t.me/tradehut01">@tradehut01</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/2349038671092">+234 903 867 1092</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:Tradehutfinance@gmail.com">Tradehutfinance@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@tradehut1" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://x.com/tradehut1" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/QQa5prbb9dJC3BSk" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/tradehut/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" onsubmit="sendToWhatsApp(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="">Select Service</option>
+                                <option value="consulting">Financial Consulting</option>
+                                <option value="education">Trading Education</option>
+                                <option value="signals">Copy Trading & Signal Service</option>
+                                <option value="real-estate">Real Estate Investment</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo2.png" alt="TradeHut Africa">
+                        <h3>TradeHut<span>Africa</span></h3>
+                    </div>
+                    <p>Elevate Your Finances. Build Your Future.</p>
+                    <div class="footer-social">
+                        <a href="https://t.me/tradehut01" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/2349038671092" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://x.com/tradehut1" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/tradehut/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Tradehut</a></li>
+                        <li><a href="gfci.html">GFCI Initiative</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="insights.html">Insights Blog</a></li>
+                        <li><a href="#">Financial Education</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                        <li><a href="#">Scam Protection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Terms & Policies</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> TradeHut Africa. All rights reserved.</p>
+                <p class="compliance-notice">
+                    Tradehut Africa operates under strict financial educational and advisory standards. 
+                    We do not offer unrealistic guarantees. All investment activities involve risk.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
