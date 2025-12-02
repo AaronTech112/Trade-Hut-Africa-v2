@@ -453,6 +453,9 @@ p {
     color: var(--primary-color);
     margin-bottom: var(--spacing-md);
 }
+.head {
+    color: var(--primary-color);
+}
 
 .section-header p {
     font-size: 1.125rem;

@@ -1,0 +1,88 @@
+/* GFCI page-specific styles aligned with global theme */
+
+/* Hero adjustments */
+.hero-section {
+  min-height: calc(85vh - var(--navbar-height) - var(--ticker-height));
+}
+
+.hero-section .gfci-badge {
+  background: rgba(139, 208, 187, 0.1);
+  border: 1px solid rgba(139, 208, 187, 0.3);
+  color: var(--secondary-color);
+}
+
+/* Visuals */
+.mission-visual img,
+.partnership-visual img {
+  border-radius: 15px;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Mission points */
+.mission-points .d-flex {
+  padding: 0.5rem 0;
+}
+.mission-points .d-flex i {
+  color: var(--secondary-color);
+}
+.mission-points h5 {
+  color: var(--primary-color);
+}
+.mission-points p {
+  color: var(--medium-gray);
+}
+
+/* Cards and blocks */
+.impact-card,
+.testimonial-card,
+.program-card,
+.contact-card {
+  background: var(--white) !important;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.impact-card .impact-icon i,
+.testimonial-card .quote-icon i,
+.program-card .program-icon i {
+  color: var(--secondary-color) !important;
+}
+
+.testimonial-card blockquote p {
+  color: var(--medium-gray);
+}
+
+.program-card h4,
+.contact-card h5 {
+  color: var(--primary-color);
+}
+.program-card p,
+.contact-card p {
+  color: var(--medium-gray);
+}
+
+/* CTA section in site gradient */
+.cta-section {
+  background-image: linear-gradient(135deg, rgba(15, 24, 53, 0.9) 0%, rgba(30, 41, 59, 0.85) 70%), var(--hero-bg-image);
+}
+.cta-section h2,
+.cta-section p {
+  color: var(--white);
+}
+
+/* Impact counters */
+#impact .counter {
+  color: var(--primary-color);
+}
+
+/* Buttons in this page use global button styles; ensure spacing */
+#mission .btn,
+#impact .btn,
+#programs .btn,
+.cta-section .btn,
+#contact .btn {
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: 50px;
+}
+
