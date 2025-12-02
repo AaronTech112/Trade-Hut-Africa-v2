@@ -22,39 +22,34 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        .fa-bars, .fa-times { display: none; }
+        @media (max-width: 768px) {
+            .fa-bars, .fa-times { display: block; }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <i class="fas fa-chart-line me-2"></i>TradeHut Africa
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gfci.html">GFCI</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="insights.html">Insights</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-outline-light ms-2 px-3" href="#contact">Contact</a>
-                    </li>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo2.png" alt="TradeHut Africa Logo" class="logo-icon">
+                <h1>TradeHut<span> Africa</span></h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()" ></i>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gfci.html" class="nav-link">GFCI</a></li>
+                    <li><a href="insights.html" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
         </div>
     </nav>
     <div class="ticker-tape" aria-label="Market ticker">
@@ -66,8 +61,8 @@
                 { "proName": "FX_IDC:EURUSD", "title": "EUR/USD" },
                 { "proName": "FX_IDC:GBPUSD", "title": "GBP/USD" },
                 { "proName": "OANDA:USDZAR", "title": "USD/ZAR" },
-                { "proName": "COMEX:GC1!", "title": "Gold" },
-                { "proName": "NYMEX:CL1!", "title": "Crude Oil" },
+                { "proName": "OANDA:XAUUSD", "title": "Gold" },
+
                 { "proName": "BINANCE:BTCUSDT", "title": "BTC/USDT" }
               ],
               "showSymbolLogo": true,
@@ -79,7 +74,6 @@
             </script>
         </div>
     </div>
-
     <!-- Hero Section -->
     <section class="hero-section bg-gradient-primary text-white py-5">
         <div class="container">

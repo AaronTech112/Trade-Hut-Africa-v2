@@ -483,17 +483,6 @@ document.querySelectorAll('.btn, .submit-btn').forEach(button => {
     });
 });
 
-// Add hover effects to cards
-document.querySelectorAll('.service-card, .trust-item, .reason-card, .insight-card').forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-5px)';
-    });
-    
-    card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0)';
-    });
-});
-
 // Add click effects
 document.querySelectorAll('.btn').forEach(button => {
     button.addEventListener('click', function(e) {

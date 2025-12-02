@@ -6,39 +6,44 @@
     <title>Our Services - TradeHut Africa</title>
     <meta name="description" content="Discover TradeHut Africa's comprehensive financial services including regulated trading solutions, real estate investment opportunities, and financial education programs.">
     
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        .fa-bars, .fa-times { display: none; }
+        @media (max-width: 768px) {
+            .fa-bars, .fa-times { display: block; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation (Unified with Homepage) -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
                 <img src="logo2.png" alt="TradeHut Africa Logo" class="logo-icon">
-                <h1>TradeHut<span>Africa</span></h1>
+                <h1>TradeHut<span> Africa</span></h1>
             </div>
             <div class="nav-links" id="navLinks">
                 <i class="fas fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
-                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="gfci.html" class="nav-link">GFCI</a></li>
-                    <li><a href="insights.html" class="nav-link">Insights</a></li>
+                    <li><a href="insights.html" class="nav-link">Blog</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -54,8 +59,8 @@
                 { "proName": "FX_IDC:EURUSD", "title": "EUR/USD" },
                 { "proName": "FX_IDC:GBPUSD", "title": "GBP/USD" },
                 { "proName": "OANDA:USDZAR", "title": "USD/ZAR" },
-                { "proName": "COMEX:GC1!", "title": "Gold" },
-                { "proName": "NYMEX:CL1!", "title": "Crude Oil" },
+                { "proName": "OANDA:XAUUSD", "title": "Gold" },
+
                 { "proName": "BINANCE:BTCUSDT", "title": "BTC/USDT" }
               ],
               "showSymbolLogo": true,
@@ -69,384 +74,440 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero-section bg-gradient-primary text-white py-5">
-        <div class="container">
-            <div class="row align-items-center min-vh-50">
-                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
-                    <h1 class="display-4 fw-bold mb-4 font-display">Comprehensive Financial Solutions</h1>
-                    <p class="lead mb-5">Empowering African traders and investors with regulated trading platforms, real estate opportunities, and financial education to build lasting wealth across global markets.</p>
-                    <div class="d-flex flex-wrap justify-content-center gap-3">
-                        <a href="#trading-solutions" class="btn btn-light btn-lg px-4">
-                            <i class="fas fa-chart-bar me-2"></i>Trading Solutions
-                        </a>
-                        <a href="#real-estate" class="btn btn-outline-light btn-lg px-4">
-                            <i class="fas fa-building me-2"></i>Real Estate
-                        </a>
-                        <a href="#education" class="btn btn-secondary btn-lg px-4">
-                            <i class="fas fa-graduation-cap me-2"></i>Education
-                        </a>
+    <section class="hero" id="services-hero">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-badge">
+                <i class="fas fa-briefcase"></i>
+                <span>Professional Services</span>
+            </div>
+            <h1>Comprehensive Financial Solutions</h1>
+            <p class="hero-subtitle">Empowering African traders and investors with regulated trading platforms, real estate opportunities, and financial education to build lasting wealth across global markets.</p>
+            <div class="hero-buttons">
+                <a href="#trading-solutions" class="btn primary-btn">
+                    <span>Trading Solutions</span>
+                    <i class="fas fa-chart-bar"></i>
+                </a>
+                <a href="#real-estate" class="btn secondary-btn">
+                    <span>Real Estate</span>
+                    <i class="fas fa-building"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">3</span>
+                    <span class="stat-label">Core Pillars</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Global</span>
+                    <span class="stat-label">Market Access</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card" data-aos="fade-left" data-aos-delay="200">
+                <div class="card-header">
+                    <i class="fas fa-layer-group"></i>
+                    <span>Our Portfolio</span>
+                </div>
+                <div class="card-content">
+                    <div class="profit-indicator">
+                        <span class="profit-amount">Wealth</span>
+                        <span class="profit-percent">Creation</span>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="hero-bg-pattern"></div>
     </section>
 
     <!-- Services Overview -->
-    <section class="py-5 bg-light">
+    <section class="services" id="overview">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                    <h2 class="display-5 fw-bold mb-4 font-display text-primary">Our Service Portfolio</h2>
-                    <p class="lead text-muted">Three pillars of financial excellence designed to accelerate your wealth-building journey through regulated, transparent, and educational approaches.</p>
-                </div>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Service Portfolio</h2>
+                <p>Three pillars of financial excellence designed to accelerate your wealth-building journey through regulated, transparent, and educational approaches.</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card service-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon mb-4">
-                                <i class="fas fa-shield-alt text-primary fa-3x"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">Regulated Trading</h4>
-                            <p class="text-muted mb-4">Access global financial markets through our regulated trading solutions with institutional-grade security and transparency.</p>
-                            <a href="#trading-solutions" class="btn btn-primary">Learn More</a>
-                        </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
+                    <h3>Regulated Trading</h3>
+                    <p>Access global financial markets through our regulated trading solutions with institutional-grade security and transparency.</p>
+                    <a href="#trading-solutions" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card service-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon mb-4">
-                                <i class="fas fa-home text-secondary fa-3x"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">Real Estate Investment</h4>
-                            <p class="text-muted mb-4">Discover premium real estate opportunities across Africa with expert guidance and comprehensive market analysis.</p>
-                            <a href="#real-estate" class="btn btn-secondary">Learn More</a>
-                        </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
                     </div>
+                    <h3>Real Estate Investment</h3>
+                    <p>Discover premium real estate opportunities across Africa with expert guidance and comprehensive market analysis.</p>
+                    <a href="#real-estate" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card service-card h-100 border-0 shadow-sm">
-                        <div class="card-body text-center p-4">
-                            <div class="service-icon mb-4">
-                                <i class="fas fa-chalkboard-teacher text-primary fa-3x"></i>
-                            </div>
-                            <h4 class="fw-bold mb-3">Financial Education</h4>
-                            <p class="text-muted mb-4">Empower yourself with comprehensive financial education programs, market insights, and community support networks.</p>
-                            <a href="#education" class="btn btn-primary">Learn More</a>
-                        </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
                     </div>
+                    <h3>Financial Education</h3>
+                    <p>Empower yourself with comprehensive financial education programs, market insights, and community support networks.</p>
+                    <a href="#education" class="service-link">
+                        <span>Learn More</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Trading Solutions Section -->
-    <section id="trading-solutions" class="py-5">
+    <section id="trading-solutions">
         <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h2 class="display-5 fw-bold mb-4 font-display text-primary">Regulated Trading Solutions</h2>
-                    <p class="lead text-muted mb-4">Access global financial markets with confidence through our institutional-grade trading platforms and regulatory compliance framework.</p>
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
-                                <span>ASIC & FCA Regulated</span>
+            <div class="split-layout mb-xl">
+                <div class="text-content" data-aos="fade-right">
+                    <h2>Regulated Trading Solutions</h2>
+                    <p>Access global financial markets with confidence through our institutional-grade trading platforms and regulatory compliance framework.</p>
+                    <div class="values-list">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>ASIC & FCA Regulated</h3>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
-                                <span>Negative Balance Protection</span>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Negative Balance Protection</h3>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
-                                <span>Segregated Client Funds</span>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Segregated Client Funds</h3>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-check-circle text-success me-2"></i>
-                                <span>24/5 Market Access</span>
+                         <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>24/5 Market Access</h3>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex gap-3">
-                        <a href="#contact" class="btn btn-primary btn-lg">Start Trading</a>
-                        <a href="insights.html" class="btn btn-outline-primary btn-lg">Learn Trading</a>
+                    <div class="hero-buttons mt-lg">
+                        <a href="#contact" class="btn primary-btn">Start Trading</a>
+                        <a href="insights.html" class="btn secondary-btn2">Learn Trading</a>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="trading-platform-preview">
-                        <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20trading%20platform%20interface%20with%20charts%2C%20graphs%2C%20and%20financial%20data%20displays%20on%20multiple%20screens%2C%20modern%20clean%20design%2C%20blue%20and%20white%20color%20scheme%2C%20high-tech%20financial%20environment&image_size=landscape_16_9" 
-                             alt="Trading Platform Interface" class="img-fluid rounded-3 shadow-lg">
+                <div class="image-content" data-aos="fade-left">
+                    <div class="values-card">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                             alt="Trading Platform Interface" style="border-radius: 15px; box-shadow: var(--shadow-lg); width: 100%; max-width: 100%;">
                     </div>
                 </div>
             </div>
             
-            <div class="row g-4 mt-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-card p-4 bg-light rounded-3">
-                        <i class="fas fa-chart-line text-primary fa-2x mb-3"></i>
-                        <h5 class="fw-bold mb-3">Multi-Asset Trading</h5>
-                        <p class="text-muted">Trade forex, stocks, indices, commodities, and cryptocurrencies from a single platform with competitive spreads.</p>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
+                    <h3>Multi-Asset Trading</h3>
+                    <p>Trade forex, stocks, indices, commodities, and cryptocurrencies from a single platform with competitive spreads.</p>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-card p-4 bg-light rounded-3">
-                        <i class="fas fa-mobile-alt text-primary fa-2x mb-3"></i>
-                        <h5 class="fw-bold mb-3">Mobile Trading</h5>
-                        <p class="text-muted">Access markets on-the-go with our award-winning mobile apps for iOS and Android devices.</p>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
+                    <h3>Mobile Trading</h3>
+                    <p>Access markets on-the-go with our award-winning mobile apps for iOS and Android devices.</p>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-card p-4 bg-light rounded-3">
-                        <i class="fas fa-robot text-primary fa-2x mb-3"></i>
-                        <h5 class="fw-bold mb-3">Automated Trading</h5>
-                        <p class="text-muted">Implement algorithmic strategies with expert advisors and copy trading functionality.</p>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
                     </div>
+                    <h3>Automated Trading</h3>
+                    <p>Implement algorithmic strategies with expert advisors and copy trading functionality.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Real Estate Section -->
-    <section id="real-estate" class="py-5 bg-light">
+    <section id="real-estate" class="bg-light">
         <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
-                    <h2 class="display-5 fw-bold mb-4 font-display text-primary">Real Estate Investment Opportunities</h2>
-                    <p class="lead text-muted mb-4">Discover premium real estate investments across Africa's fastest-growing markets with comprehensive due diligence and expert guidance.</p>
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt text-secondary me-2"></i>
-                                <span>Multi-Country Coverage</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-handshake text-secondary me-2"></i>
-                                <span>Local Partnerships</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-chart-bar text-secondary me-2"></i>
-                                <span>Market Analysis</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-shield-alt text-secondary me-2"></i>
-                                <span>Due Diligence</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex gap-3">
-                        <a href="#contact" class="btn btn-secondary btn-lg">Explore Properties</a>
-                        <a href="insights.html" class="btn btn-outline-secondary btn-lg">Market Insights</a>
+            <div class="split-layout reverse-layout">
+                <div class="image-content" data-aos="fade-right">
+                     <div class="gallery-grid">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" 
+                             alt="Luxury Apartments" class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" 
+                             alt="Commercial Property" class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" 
+                             alt="Residential Development" class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" 
+                             alt="Mixed Development" class="gallery-img">
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
-                    <div class="real-estate-gallery">
-                        <div class="row g-3">
-                            <div class="col-6">
-                                <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20African%20luxury%20apartment%20building%20with%20glass%20facade%2C%20professional%20architecture%2C%20urban%20setting%2C%20high-end%20real%20estate%20development%2C%20clean%20modern%20design&image_size=square" 
-                                     alt="Luxury Apartments" class="img-fluid rounded-3 shadow-sm">
+                <div class="text-content" data-aos="fade-left">
+                    <h2>Real Estate Investment Opportunities</h2>
+                    <p>Discover premium real estate investments across Africa's fastest-growing markets with comprehensive due diligence and expert guidance.</p>
+                    <div class="values-list">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div class="col-6">
-                                <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Commercial%20office%20building%20in%20Africa%2C%20modern%20business%20district%2C%20glass%20and%20steel%20architecture%2C%20professional%20corporate%20real%20estate%2C%20urban%20development&image_size=square" 
-                                     alt="Commercial Property" class="img-fluid rounded-3 shadow-sm">
-                            </div>
-                            <div class="col-6">
-                                <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Residential%20housing%20development%20in%20Africa%2C%20family%20homes%2C%20modern%20suburban%20architecture%2C%20green%20spaces%2C%20community%20living%20environment%2C%20sustainable%20development&image_size=square" 
-                                     alt="Residential Development" class="img-fluid rounded-3 shadow-sm">
-                            </div>
-                            <div class="col-6">
-                                <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Mixed-use%20development%20project%20in%20Africa%2C%20retail%20and%20residential%20combined%2C%20modern%20urban%20planning%2C%20architectural%20rendering%2C%20sustainable%20design&image_size=square" 
-                                     alt="Mixed Development" class="img-fluid rounded-3 shadow-sm">
+                            <div class="value-content">
+                                <h3>Multi-Country Coverage</h3>
                             </div>
                         </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Local Partnerships</h3>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Market Analysis</h3>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Due Diligence</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons mt-lg">
+                        <a href="#contact" class="btn secondary-btn2">Explore Properties</a>
+                        <a href="insights.html" class="btn secondary-btn2">Market Insights</a>
                     </div>
                 </div>
             </div>
             
-            <div class="row g-4 mt-4">
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="stat-card text-center p-4 bg-white rounded-3 shadow-sm">
-                        <h3 class="display-6 fw-bold text-primary mb-2">15+</h3>
-                        <p class="text-muted mb-0">Countries Covered</p>
-                    </div>
+            <div class="hero-stats justify-center mt-xl">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Countries Covered</span>
                 </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-card text-center p-4 bg-white rounded-3 shadow-sm">
-                        <h3 class="display-6 fw-bold text-secondary mb-2">$2.5B+</h3>
-                        <p class="text-muted mb-0">Properties Evaluated</p>
-                    </div>
+                <div class="stat-item">
+                    <span class="stat-number">$2.5B+</span>
+                    <span class="stat-label">Properties Evaluated</span>
                 </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat-card text-center p-4 bg-white rounded-3 shadow-sm">
-                        <h3 class="display-6 fw-bold text-primary mb-2">98%</h3>
-                        <p class="text-muted mb-0">Client Satisfaction</p>
-                    </div>
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Client Satisfaction</span>
                 </div>
-                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-                    <div class="stat-card text-center p-4 bg-white rounded-3 shadow-sm">
-                        <h3 class="display-6 fw-bold text-secondary mb-2">24/7</h3>
-                        <p class="text-muted mb-0">Market Monitoring</p>
-                    </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Market Monitoring</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="py-5">
+    <section id="education">
         <div class="container">
-            <div class="row align-items-center mb-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <h2 class="display-5 fw-bold mb-4 font-display text-primary">Financial Education & Community</h2>
-                    <p class="lead text-muted mb-4">Empower yourself with comprehensive financial education programs designed for African markets and global investment strategies.</p>
-                    <div class="education-features mb-4">
-                        <div class="d-flex mb-3">
-                            <div class="flex-shrink-0">
-                                <i class="fas fa-graduation-cap text-primary fa-lg"></i>
+            <div class="split-layout">
+                <div class="text-content" data-aos="fade-right">
+                    <h2>Financial Education & Community</h2>
+                    <p>Empower yourself with comprehensive financial education programs designed for African markets and global investment strategies.</p>
+                    <div class="values-list">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-graduation-cap"></i>
                             </div>
-                            <div class="flex-grow-1 ms-3">
-                                <h5 class="fw-bold mb-1">Structured Learning Paths</h5>
-                                <p class="text-muted mb-0">From beginner to advanced levels with personalized curriculum and progress tracking.</p>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <div class="flex-shrink-0">
-                                <i class="fas fa-users text-secondary fa-lg"></i>
-                            </div>
-                            <div class="flex-grow-1 ms-3">
-                                <h5 class="fw-bold mb-1">Community Support</h5>
-                                <p class="text-muted mb-0">Connect with like-minded investors and traders across Africa for knowledge sharing.</p>
+                            <div class="value-content">
+                                <h3>Structured Learning Paths</h3>
+                                <p>From beginner to advanced levels with personalized curriculum.</p>
                             </div>
                         </div>
-                        <div class="d-flex mb-3">
-                            <div class="flex-shrink-0">
-                                <i class="fas fa-certificate text-primary fa-lg"></i>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
                             </div>
-                            <div class="flex-grow-1 ms-3">
-                                <h5 class="fw-bold mb-1">Certification Programs</h5>
-                                <p class="text-muted mb-0">Earn recognized certifications in trading, investment analysis, and financial planning.</p>
+                            <div class="value-content">
+                                <h3>Community Support</h3>
+                                <p>Connect with like-minded investors and traders across Africa.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Certification Programs</h3>
+                                <p>Earn recognized certifications in trading and analysis.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex gap-3">
-                        <a href="#contact" class="btn btn-primary btn-lg">Join Community</a>
-                        <a href="insights.html" class="btn btn-outline-primary btn-lg">Browse Courses</a>
+                    <div class="hero-buttons mt-lg">
+                        <a href="#contact" class="btn primary-btn">Join Community</a>
+                        <a href="insights.html" class="btn secondary-btn2">Browse Courses</a>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="education-preview">
-                        <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20online%20education%20platform%20interface%20with%20video%20courses%2C%20progress%20tracking%2C%20interactive%20quizzes%2C%20and%20certificates%2C%20professional%20e-learning%20design%2C%20blue%20and%20white%20color%20scheme%2C%20user-friendly%20dashboard&image_size=landscape_16_9" 
-                             alt="Education Platform" class="img-fluid rounded-3 shadow-lg">
+                <div class="image-content" data-aos="fade-left">
+                    <div class="values-card">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" 
+                             alt="Education Platform" style="border-radius: 15px; box-shadow: var(--shadow-lg); width: 100%; max-width: 100%;">
                     </div>
                 </div>
             </div>
             
-            <div class="row g-4 mt-4">
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="course-category-card p-4 bg-light rounded-3">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-chart-line text-primary fa-2x me-3"></i>
-                            <h4 class="fw-bold mb-0">Trading Education</h4>
-                        </div>
-                        <p class="text-muted mb-3">Master technical analysis, risk management, and trading psychology with hands-on practice sessions.</p>
-                        <ul class="list-unstyled text-muted">
-                            <li><i class="fas fa-check me-2"></i>Forex Trading Basics</li>
-                            <li><i class="fas fa-check me-2"></i>Technical Analysis</li>
-                            <li><i class="fas fa-check me-2"></i>Risk Management</li>
-                            <li><i class="fas fa-check me-2"></i>Trading Psychology</li>
-                        </ul>
+            <div class="services-grid mt-xl" style="margin-bottom: 55px;" >
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
+                    <h3>Trading Education</h3>
+                    <p>Master technical analysis, risk management, and trading psychology with hands-on practice sessions.</p>
                 </div>
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="course-category-card p-4 bg-light rounded-3">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-home text-secondary fa-2x me-3"></i>
-                            <h4 class="fw-bold mb-0">Investment Strategies</h4>
-                        </div>
-                        <p class="text-muted mb-3">Learn portfolio diversification, real estate investment, and long-term wealth building strategies.</p>
-                        <ul class="list-unstyled text-muted">
-                            <li><i class="fas fa-check me-2"></i>Portfolio Management</li>
-                            <li><i class="fas fa-check me-2"></i>Real Estate Investment</li>
-                            <li><i class="fas fa-check me-2"></i>Retirement Planning</li>
-                            <li><i class="fas fa-check me-2"></i>Tax Optimization</li>
-                        </ul>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-book-open"></i>
                     </div>
+                    <h3>Course Library</h3>
+                    <p>Access a rich library of video courses, articles, and e-books on financial topics.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3>Webinars & Seminars</h3>
+                    <p>Join live webinars and in-person seminars with industry experts and seasoned traders.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section py-5 bg-primary text-white">
+    <section class="cta-section">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-8" data-aos="fade-right">
-                    <h2 class="display-5 fw-bold mb-3 font-display">Ready to Start Your Financial Journey?</h2>
-                    <p class="lead mb-0">Join thousands of Africans who are building wealth through our comprehensive financial solutions.</p>
-                </div>
-                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
-                    <a href="#contact" class="btn btn-light btn-lg px-4 me-3 mb-2">
-                        <i class="fas fa-rocket me-2"></i>Get Started
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Join the Tradehut Africa Community</h2>
+                <p>Clarity begins with a conversation. Start your journey to financial empowerment today.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary-btn">
+                        <span>Book a Free Consultation</span>
+                        <i class="fas fa-calendar-check"></i>
                     </a>
-                    <a href="insights.html" class="btn btn-outline-light btn-lg px-4 mb-2">
-                        <i class="fas fa-book me-2"></i>Learn More
+                    <a href="gfci.html" class="btn secondary-btn">
+                        <span>Learn About GFCI</span>
+                        <i class="fas fa-shield-alt"></i>
                     </a>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center mb-5" data-aos="fade-up">
-                    <h2 class="display-5 fw-bold mb-4 font-display text-primary">Get In Touch</h2>
-                    <p class="lead text-muted">Ready to explore our services? Contact our team for personalized consultation and expert guidance.</p>
-                </div>
+            <div class="section-header" data-aos="fade-up">
+                <h2>Get In Touch</h2>
+                <p>We're here to help you achieve your financial goals</p>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="contact-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
-                        <i class="fas fa-phone text-primary fa-2x mb-3"></i>
-                        <h5 class="fw-bold mb-2">Phone Support</h5>
-                        <p class="text-muted mb-3">Speak with our financial experts for immediate assistance.</p>
-                        <a href="tel:+2341234567890" class="btn btn-outline-primary">Call Now</a>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Telegram</h3>
+                            <a href="https://t.me/tradehut01">@tradehut01</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/2349038671092">+234 903 867 1092</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:Tradehutfinance@gmail.com">Tradehutfinance@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.tiktok.com/@tradehut1" target="_blank" class="social-link">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://x.com/tradehut1" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/QQa5prbb9dJC3BSk" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/tradehut/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="contact-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
-                        <i class="fab fa-whatsapp text-success fa-2x mb-3"></i>
-                        <h5 class="fw-bold mb-2">WhatsApp</h5>
-                        <p class="text-muted mb-3">Quick questions and instant support via WhatsApp.</p>
-                        <a href="https://wa.me/2341234567890" class="btn btn-success" target="_blank">Chat on WhatsApp</a>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="contact-card text-center p-4 bg-white rounded-3 shadow-sm h-100">
-                        <i class="fas fa-envelope text-primary fa-2x mb-3"></i>
-                        <h5 class="fw-bold mb-2">Email Us</h5>
-                        <p class="text-muted mb-3">Detailed inquiries and documentation requests.</p>
-                        <a href="mailto:info@tradehutafrica.com" class="btn btn-outline-primary">Send Email</a>
-                    </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" onsubmit="sendToWhatsApp(event)">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="">Select Service</option>
+                                <option value="consulting">Financial Consulting</option>
+                                <option value="education">Trading Education</option>
+                                <option value="signals">Copy Trading & Signal Service</option>
+                                <option value="real-estate">Real Estate Investment</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Unified with Homepage) -->
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -501,13 +562,24 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- AOS Animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom JavaScript -->
     <script src="script.js"></script>
+
+ 
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>

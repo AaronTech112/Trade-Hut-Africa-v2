@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        .fa-bars, .fa-times { display: none; }
+        @media (max-width: 768px) {
+            .fa-bars, .fa-times { display: block; }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -16,17 +22,17 @@
         <div class="nav-container">
             <div class="logo">
                 <img src="logo2.png" alt="TradeHut Africa Logo" class="logo-icon">
-                <h1>TradeHut<span>Africa</span></h1>
+                <h1>TradeHut<span> Africa</span></h1>
             </div>
             <div class="nav-links" id="navLinks">
-                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <i class="fas fa-times" onclick="hideMenu()" ></i>
                 <ul>
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="about.html" class="nav-link">About</a></li>
                     <li><a href="services.html" class="nav-link">Services</a></li>
                     <li><a href="gfci.html" class="nav-link">GFCI</a></li>
-                    <li><a href="insights.html" class="nav-link">Insights</a></li>
-                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    <li><a href="insights.html" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </div>
             <i class="fas fa-bars" onclick="showMenu()"></i>
@@ -41,8 +47,8 @@
                 { "proName": "FX_IDC:EURUSD", "title": "EUR/USD" },
                 { "proName": "FX_IDC:GBPUSD", "title": "GBP/USD" },
                 { "proName": "OANDA:USDZAR", "title": "USD/ZAR" },
-                { "proName": "COMEX:GC1!", "title": "Gold" },
-                { "proName": "NYMEX:CL1!", "title": "Crude Oil" },
+                { "proName": "OANDA:XAUUSD", "title": "Gold" },
+
                 { "proName": "BINANCE:BTCUSDT", "title": "BTC/USDT" }
               ],
               "showSymbolLogo": true,
@@ -95,7 +101,7 @@
                 </div>
                 <div class="overview-visual" data-aos="fade-left">
                     <div class="overview-card">
-                        <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Professional%20African%20business%20team%20in%20modern%20office%2C%20diverse%20group%2C%20confident%20expressions%2C%20professional%20attire%2C%20bright%20modern%20lighting%2C%20corporate%20setting&image_size=landscape_16_9" alt="TradeHut Africa Team">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1350&q=80" alt="TradeHut Africa Team">
                         <div class="card-overlay">
                             <h3>Our Global Team</h3>
                             <p>Experts across Africa and Europe</p>
@@ -182,7 +188,7 @@
                 </div>
                 <div class="vision-visual" data-aos="fade-left">
                     <div class="vision-map">
-                        <img src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20Africa%20map%20with%20glowing%20connection%20lines%2C%20professional%20business%20network%20visualization%2C%20blue%20and%20green%20color%20scheme%2C%20clean%20minimalist%20design%2C%20corporate%20style&image_size=square_hd" alt="Africa Network">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Large_World_Map_bright.jpg/1024px-Large_World_Map_bright.jpg" alt="Globe Network">
                         <div class="map-points">
                             <div class="map-point nigeria" data-country="Nigeria">
                                 <div class="point-marker"></div>
@@ -277,6 +283,27 @@
 
     <!-- GFCI Initiative -->
     <section class="gfci-about-section">
+        <style>
+            /* Internal CSS for GFCI list styling */
+            .gfci-objectives ul {
+                list-style: none;
+                padding-left: 0;
+                margin: 0;
+            }
+            .gfci-objectives ul li {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 12px;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+            .gfci-objectives ul li i {
+                color: #00c853;
+                margin-right: 10px;
+                margin-top: 4px;
+                flex-shrink: 0;
+            }
+        </style>
         <div class="container">
             <div class="gfci-content">
                 <div class="gfci-text" data-aos="fade-right">
@@ -340,7 +367,6 @@
             </div>
         </div>
     </section>
-
     <!-- What Makes Us Different -->
     <section class="different-section">
         <div class="container">
