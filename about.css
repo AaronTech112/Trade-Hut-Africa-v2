@@ -1,0 +1,76 @@
+.overview-content,
+.vision-content,
+.commitments-content,
+.footprint-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3xl);
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .overview-content,
+  .vision-content,
+  .commitments-content,
+  .footprint-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  .overview-visual,
+  .vision-visual,
+  .commitments-visual {
+    margin-top: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .overview-stats {
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+  }
+  .vision-points {
+    margin-top: var(--spacing-lg);
+  }
+  .vision-point {
+    flex-wrap: wrap;
+  }
+  .vision-map img {
+    width: 100%;
+    height: auto;
+  }
+  .map-point .point-label {
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+  .footprint-content {
+    gap: var(--spacing-xl);
+  }
+  .region-locations .location {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  .commitment-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .commitment-card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-point .point-label {
+    font-size: 0.65rem;
+  }
+}
+
+.commitments-text p,
+.region-locations .location span,
+.region-locations .location strong {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
